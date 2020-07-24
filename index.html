@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test screen</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="form-title">
+      <h1 id="title">The Business Lounge</h1>
+      <div>
+        <p id="description">Gentlemen Survey</p>
+      </div>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <div id="personal-info">
+          <label for="name" class="info1" id="name-label">Full Name: </label>
+          <input type="text" id="name" placeholder="name" class="input1" required>
+          <br><br>
+          <label for="email" class="info1" id="email-label">Email: </label>
+          <input type="email" id="email" placeholder="email" class="input1" required>
+          <br><br>
+          <label for="number" class="info1" id="number-label">Age:</label>
+          <input type="number" placeholder="age" id="number" class="input1" min="1" max="99">
+          <br><br>
+          <label for="address" class="info1">Address:</label>
+          <input type="number" placeholder="address" id="address" class="input1">
+          <br><br>
+          <label for="phone" class="info1">Phone number:</label>
+          <input type="tel" placeholder="Phone number" id="phone" class="input1">
+        </div>
+      </fieldset>
+      <br><br>
+      <div id="second-sect">
+        <label>Select Language </label>
+        <select id="dropdown" name="language">
+          <option value="english">English</option>
+          <option value="french">French</option>
+          <option value="spanish">Spanish</option>
+          <option value="arabic">Arabic</option>
+        </select>
+        <div id="invest">
+          <h3><strong>Prefered Investments</strong></h3>
+          <label>Stocks</label>
+          <input type="checkbox" value="Stocks">
+          <br><br>
+          <label>Bonds</label>
+          <input type="checkbox" value="bonds">
+          <br><br>
+          <label>Real-Estate</label>
+          <input type="checkbox" value="realestate">
+        </div>
+        <p><strong> Would you recommend this course to a friend</strong></p>
+        <label>yes</label>
+        <input type="radio" name="recommend" value="yes">
+        <label>no</label>
+        <input type="radio" name="recommend" value="no">
+        <label>maybe</label>
+        <input type="radio" name="recommend" value="maybe"><br><br>
+        <textarea></textarea><br><br>
+        <button id="submit">submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
